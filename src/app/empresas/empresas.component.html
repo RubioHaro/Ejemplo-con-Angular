@@ -1,0 +1,35 @@
+<div>
+  <h2 class="h1">Empresas</h2>
+  <ul class="list-group">
+    <ng-container *ngFor="let Empresa of Empresas">
+      <li class="list-group-item" *ngIf="Empresa.active">{{Empresa.nombre}}</li>
+    </ng-container>
+  </ul>
+
+  <hr/>
+  <!--
+<h2>Empresas 2</h2>
+    <ul>
+      <ng-container *ngFor="let Empresa of Empresas; let i = index" [<span [ngSwitch]="Empresa.cercania">
+        <a>
+          <li contar-clicks [ngStyle]="{color: (Empresa.active) ? 'black' : 'red' }" [resaltarTipoCuenta]="Empresa.plan">
+            {{Empresa.nombre}} {{Empresa.nombre}}-
+            <a href="" *ngSwitchCase="1" [ngStyle]="{color: 'green'}">
+              Muy cercano
+            </a>
+            <a *ngSwitchCase="2" [ngStyle]="{color: 'orange'}">
+              Cercano
+            </a>
+            <a *ngSwitchCase="3" [ngStyle]="{color: 'red'}">
+              Un poco lejos
+            </a>
+            <a *ngSwitchDefault>
+              Un poco lejos
+            </a>
+          </li>
+        </a>
+      </ng-container>
+    </ul>
+
+    -->
+</div>

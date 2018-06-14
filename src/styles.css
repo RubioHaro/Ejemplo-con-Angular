@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+agm-map {
+    height: 300px;
+  }
+
+  .Numero_Par{
+    background-color: gray;
+  }
