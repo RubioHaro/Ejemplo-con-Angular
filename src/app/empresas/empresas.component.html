@@ -1,8 +1,9 @@
 <div>
-  <h2 class="h1">Empresas</h2>
+  <p class="h1">Empresas</p>
   <ul class="list-group">
     <ng-container *ngFor="let Empresa of Empresas">
-      <li class="list-group-item" *ngIf="Empresa.active">{{Empresa.nombre}}</li>
+      <a routerLink="/Detalles/{{Empresa.id}}" [queryParams]="{action: 'edit', referer: 'google.com'}" >
+        <li class="list-group-item" *ngIf="Empresa.active">{{Empresa.nombre}}</li></a>
     </ng-container>
   </ul>
 

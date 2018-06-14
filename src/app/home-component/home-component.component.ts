@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponentComponent implements OnInit {
 
+  title = 'Rubio Haro Systems Cloud';
+
   constructor() { }
 
   ngOnInit() {

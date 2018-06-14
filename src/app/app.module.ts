@@ -17,8 +17,10 @@ import { HomeComponentComponent } from './home-component/home-component.componen
 const appRoutes: Routes = [
   {path: 'Empresas', component: EmpresasComponent},
   {path: 'empresas', component: EmpresasComponent},
-  {path: 'Detalles', component: DetallesComponent},
-  {path: 'detalles', component: DetallesComponent},
+  {path: 'Detalles/:id', component: DetallesComponent},
+  {path: 'detalles/:id', component: DetallesComponent},
+  {path: 'Inicio', component: HomeComponentComponent},
+  {path: 'inicio', component: HomeComponentComponent},
   {path: '', component: HomeComponentComponent}
 ];
 
