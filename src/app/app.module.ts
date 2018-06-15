@@ -13,6 +13,8 @@ import { EmpresasComponent } from './empresas/empresas.component';
 import { NvarHomeComponent } from './nvar-home/nvar-home.component';
 import { FooterHomeComponent } from './footer-home/footer-home.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { MapaGeneralComponent } from './mapa-general/mapa-general.component';
 
 const appRoutes: Routes = [
   {path: 'Empresas', component: EmpresasComponent},
@@ -21,6 +23,10 @@ const appRoutes: Routes = [
   {path: 'detalles/:id', component: DetallesComponent},
   {path: 'Inicio', component: HomeComponentComponent},
   {path: 'inicio', component: HomeComponentComponent},
+  {path: 'Contacto', component: ContactoComponent},
+  {path: 'contacto', component: ContactoComponent},
+  {path: 'Ubicacion', component: MapaGeneralComponent},
+  {path: 'ubicacion', component: MapaGeneralComponent},
   {path: '', component: HomeComponentComponent}
 ];
 
@@ -33,7 +39,9 @@ const appRoutes: Routes = [
     EmpresasComponent,
     NvarHomeComponent,
     FooterHomeComponent,
-    HomeComponentComponent
+    HomeComponentComponent,
+    ContactoComponent,
+    MapaGeneralComponent
   ],
   imports: [
     BrowserModule,

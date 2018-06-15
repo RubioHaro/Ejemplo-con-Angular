@@ -17,6 +17,13 @@
       <li routerLinkActive="active" class="nav-item">
         <a class="nav-link" routerLink="/Detalles/1">Precios</a>
       </li>
+      <li routerLinkActive="active" class="nav-item">
+        <a class="nav-link" routerLink="/Contacto">Contacto</a>
+      </li>
+      <li routerLinkActive="active" class="nav-item">
+        <a class="nav-link" routerLink="/Ubicacion">Ubicacion</a>
+      </li>
+
     </ul>
     <span class="navbar-text">
       Soluciones Digitales
@@ -40,9 +47,5 @@
       Nombre: {{nombre}}
     </p>
   -->
-    <h2>Mapa</h2>
-    <agm-map [latitude]="lat" [longitude]="lng">
-      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
-    </agm-map>
   </div>
 </div>

@@ -12,9 +12,6 @@ export class AppComponent {
   BloqueoRegistro = true;
   nombre:string = "";
 
-lat: number = 19.416406;
-lng: number = -99.1651395;
-
   constructor(){
     setTimeout( ()=>{
       this.BloqueoRegistro = false;
