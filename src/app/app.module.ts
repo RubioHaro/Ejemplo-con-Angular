@@ -15,6 +15,23 @@ import { FooterHomeComponent } from './footer-home/footer-home.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { MapaGeneralComponent } from './mapa-general/mapa-general.component';
+import { EmpresasService } from './empresas.service';
+
+
+/*Firebase*/
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+export const firebaseConfig = {
+  apiKey: "AIzaSyA5MiWcg61NZ2CFZcPWQaPd8YuhIKewE-8",
+    authDomain: "ejemploangular-1528910492139.firebaseapp.com",
+    databaseURL: "https://ejemploangular-1528910492139.firebaseio.com",
+    projectId: "ejemploangular-1528910492139",
+    storageBucket: "",
+    messagingSenderId: "805920248908"
+};
+
 
 const appRoutes: Routes = [
   {path: 'Empresas', component: EmpresasComponent},
@@ -49,9 +66,12 @@ const appRoutes: Routes = [
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCeu8SVknFvRC9tXSL_wnj-oYcQR1Fgw_c'
     }),
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
-  providers: [],
+  providers: [EmpresasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
